@@ -1,0 +1,298 @@
+
+@font-face{
+    font-family: 'BS'; 
+    src: url('b&b.ttf'); 
+}
+
+body{
+    background-image: url("../ImagenesSW/em.jpg");
+    color: #fff;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 100%;
+    margin: 0px;
+}
+
+/* Letras Star Wars */
+.logo{
+    margin: 25px;
+    display: inline-block;
+
+}
+
+#logo{
+    padding-left: 5%;
+    font-size: 200%;
+    font-family: 'BS',serif;
+    margin-top: 5px;
+    height: 60px;
+    width: 250px;
+    float:left;
+    padding-top: 0px;
+}
+
+#logo a{
+    color: #fffa00;
+}
+
+
+/* Letras de los links */
+a{
+    text-decoration: none;
+}
+a:link {
+    color: #bfbaba;
+}
+a:visited {
+    color: #bfbaba;
+}
+a:hover{
+    color: #ff0;
+}
+a:active{
+    color: #fff;
+}
+
+/* Body -> header (division superior de la pagina, con Login) */
+header {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    background-color: #000;
+    padding-bottom: 20px;
+    border-bottom-style: solid;
+    border-bottom-color: #254b72;
+}
+
+/* Menu del Login */
+div#menuder{
+    padding-top: 3%;
+    padding-right: 3%;
+    float:right;
+}
+div#menuder div{
+    display:inline-block;
+}
+
+
+div.carrito img{
+    height: 20px;
+    width: 20px;
+}
+/*Animacion*/
+@keyframes round {
+    from {
+        transform: rotate(7deg);
+    }
+    to {
+        transform: rotate(-7deg);
+    }
+}
+
+div.carrito img:hover{
+    animation-name: round;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+div.cart img{
+    height: 10%;
+}
+
+/* Menu Izquierdo (nav) - Repasar */
+nav {
+    position: fixed;
+    float:left;
+    width: 20%;
+    padding-top: 9%;
+    height: 100%;
+    background-color: #000;
+    border-right-style: solid;
+    border-right-color: #254b72;
+    border-right-width: 2px;
+    z-index: 1;
+}
+nav ul{
+    padding: 0px;
+    padding-top: 5%;
+    margin: 0px;
+}
+nav ul li{
+    list-style-type: none;
+    background: linear-gradient(#434343,#000);
+    padding-left: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+/*Menu izquierdo - desplegable hacia abajo*/
+nav>ul li:hover{
+    width:101%;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background: linear-gradient(#305892,#111);
+}
+
+
+nav ul li ul { 
+    display: none;
+}
+nav ul li a:hover ul, nav ul li:hover ul {
+    display: block;
+    position: absolute;
+    left: 20px;
+    width:100%;
+}
+nav ul li a{
+    display: block;
+}
+
+/*Main*/
+main{
+    margin-top: 7%;
+    margin-bottom: 5%;
+    position:relative;
+    width: 79%;
+    height: 90%;
+    margin-left: 1%;
+    margin-right: 1%;
+    float:right;
+}
+
+
+/* fondo azul */
+main>div{
+    background-color: #193858;
+    padding: 2%;
+    margin: 1%;
+    width: 95%;
+    border-radius: 5px;
+    border-color: #234c77;
+    border-style: solid;
+    border-width: 2px;
+    float:left;
+}
+
+
+/*Estilo de las tablas*/
+.informacion{
+    text-align: center;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+}
+
+.informacion img{
+    width: 100%;
+    display: block;
+}
+
+.informacion table{
+    color: #000;
+    border-radius: 5px;
+    width:100%;
+}
+
+.informacion td{
+    background: linear-gradient(#266CB4,#b8f2f8); /* (#133858,#b8f2f8); 193858  */
+}
+.informacion td:hover{
+    background: linear-gradient(#52edff,#b8f2f8);
+}
+
+.informacion table a{
+    display:block;
+    color: #000;
+}
+.informacion table td{
+    width: 20%;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.informacion table th{
+    width: 20%;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+
+/* videos youtube */
+.video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+}
+
+
+.input{
+    border-color: #40adb9;
+    background-color: #b8f2f8;
+}
+
+/* el input en el que se escribe se vuelve blanco */
+.input:focus{
+    background-color: #fff;
+}
+
+/* alinear formulario */
+#registro div{
+    width: 55%;
+    float: left;
+}
+
+#registro input{
+    float: right;
+}
+
+/*Boton de submit*/
+#registro button{
+    float: right;
+}
+
+#contacto div{
+    width: 60%;
+    float: left;
+}
+
+#contacto input, textarea{
+    float: right;
+
+}
+
+#contacto button{
+    float: right;
+}
+
+
+
+main form div {
+    margin:10px;
+}
+
+/*Footer*/
+footer {
+    position: fixed;
+    bottom:0px;
+    display:block;
+    text-align: center;
+    clear:both;
+    width: 100%;
+    background-color: #000;
+    border-top-style: solid;
+    border-top-color: #254b72;
+    border-top-width: 2px;
+}
+footer li{
+    list-style-type: none;
+    display: inline-block;
+}

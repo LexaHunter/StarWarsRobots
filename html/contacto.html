@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StarWars Robot</title>
+        <link href="../Style/stylesheet.css" rel="stylesheet" type="text/css"> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- https://www.w3schools.com/css/css_rwd_viewport.asp -->
+        <link rel="shortcut icon" href="../ImagenesSW/icon.ico"/>
+</head>
+
+<body>
+    <header>
+    <div id="logo">
+        <a href="../index.html" title="Home" class="logo">StarWars</a> 
+    </div>
+
+    <div id="menuder">
+        <div id="login">
+            <div>
+                <form action="login.html" method="post">
+                    <div>Usuario </div>
+                    <input type="text" name="user">
+
+                    <div> Contraseña</div>
+                    <input type="password" name="password">
+                    <button type="submit" name="login" value="Login">Login</button>
+                </form>
+            </div>
+
+        </div>
+        <div class="carrito">
+            <a href="carrito.html">
+            <img src="../ImagenesSW/cart1.png" alt="Cart"></a>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <form method="post">     
+        <div><input type="search" placeholder="Search" name="search"></div>
+        
+        <div id="livesearch"></div> 
+    </form>
+    
+    <ul>
+        <li>
+            <a href="../index.html">Robots</a>
+            <ul>
+                <li><a href="../html/r2d2.html">R2D2</a></li>
+                <li><a href="../html/c3po.html">C3PO</a></li>
+                <li><a href="../html/bb8.html">BB-8</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">Peliculas</a>
+            <ul>
+                <li><a href="http://es.starwars.wikia.com/wiki/Trilog%C3%ADa_Cl%C3%A1sica" target="_blank">Episodios IV, V, VII</a></li>
+                <li><a href="http://es.starwars.wikia.com/wiki/Trilog%C3%ADa_de_Precuelas" target="_blank">Episodios I, II, III</a></li>
+                <li><a href="http://es.starwars.wikia.com/wiki/Star_Wars_Episodio_VII:_El_Despertar_de_la_Fuerza" target="_blank">El despertar de la fuerza</a></li>
+                <li><a href="http://starwars.wikia.com/wiki/Rogue_One:_A_Star_Wars_Story" target="_blank">Rogue One</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">Tienda</a>
+            <ul>
+                <li><a href="http://www.sphero.com/starwars/bb8" target="_blank">Sphero</a></li>
+                <li><a href="https://es.aliexpress.com/w/wholesale-star-wars-pen-drive.html" target="_blank">Pen Drives</a></li>
+                <li><a href="https://blackmilkclothing.com/search?q=star+wars" target="_blank">Ropa</a></li>  
+            </ul>
+        </li>
+
+    </ul>  
+</nav>
+
+<main>
+    <div>
+        
+        <form id="contacto">
+
+            <div> <label for="nombre">Nombre:  </label>
+                <input class="input" id="nombre" type="text" name="nombre" maxlength="16"> 
+            </div>
+            
+            <div> <label for="email">Correo:</label>
+                <input class="input" id="email" type="email" name="correo"> 
+            </div>
+
+            <div> <label for="asunto">Asunto: </label>
+                <input class="input" id="asunto" type="text" name="asunto" maxlength="16"> 
+            </div>
+
+            <div> <label for="mensaje">Mensaje: </label>
+                <textarea rows="6" cols="50" placeholder="Escriba aqui..."></textarea>
+            </div>
+
+            <div><Button type="submit">Enviar</Button></div>
+        </form>
+
+
+
+    </div>        
+</main>
+
+<footer>
+    <ul class="footermenu">
+        <li>Copyright <span>Maria Paz Rubio</span></li>
+        <li><a href="contacto.html" title="pazrubiorubio@gmail.com">Contact</a></li>
+    </ul>
+</footer>    
+
+</body>
+
+</html>
